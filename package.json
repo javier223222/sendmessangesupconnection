@@ -1,0 +1,31 @@
+{
+  "name": "sendemialconfirmation",
+  "version": "1.0.0",
+  "description": "We build a services ton send mensagges to add persons a aplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier223222/sendmessangesupconnection.git"
+  },
+  "author": "JAVIER ANTONIO CUNDAPI TOLEDO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javier223222/sendmessangesupconnection/issues"
+  },
+  "homepage": "https://github.com/javier223222/sendmessangesupconnection#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.3",
+    "nodemailer": "^6.9.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

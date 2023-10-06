@@ -63,7 +63,7 @@ const { connection } = require('../config/db.config');
 
 
 const signUp = async (req, res) => {
-    
+
 //     try {
         
 //         Obtener la data del usuario: name, email
@@ -148,6 +148,7 @@ const signUp = async (req, res) => {
 }
 
 const confirm = async (req, res) => {
+    
     // try {
 
     //    Obtener el token
@@ -200,6 +201,11 @@ const confirm = async (req, res) => {
     //    })
     //    Redireccionar a la confirmación
     //    return res.redirect('https://www.primevideo.com/region/na/settings?ref_=atv_auth_red_aft');
+
+    res.json({
+        success:true,
+        
+    })
         
     // } catch (error) {
     //     console.log(error);

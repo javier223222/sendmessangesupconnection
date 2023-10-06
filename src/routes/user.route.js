@@ -9,4 +9,10 @@ router.post(
     UserController.signUp
 );
 
+router.get(
+    '/confirm/:token',
+    [],
+    UserController.confirm
+);
+
 module.exports=router;

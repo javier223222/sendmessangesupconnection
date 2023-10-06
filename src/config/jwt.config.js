@@ -3,7 +3,7 @@ const jwt =require("jsonwebtoken")
 const getToken=async (payload)=>{
     return jwt.sign({
         data:payload
-    },'ACCESS',{expiresIn:"24h"})
+    },'ACCESS',{expiresIn:"1h"})
 }
 
 const getTokenData= async (token)=>{

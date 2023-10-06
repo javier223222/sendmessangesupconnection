@@ -49,7 +49,7 @@ let transporter = nodemailer.createTransport({
             <h2>Hola ${ name }</h2>
             <p>Para confirmar su mampes confirme</p>
             <a
-                href="http://localhost:4000/api/user/confirm/${ token }"
+                href="http://localhost:4000/api/user/confirm/${token}"
                 target="_blank"
             >Confirmar Cuenta</a>
         </div>

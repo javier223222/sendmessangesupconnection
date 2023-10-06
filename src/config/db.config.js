@@ -1,9 +1,16 @@
 const mongoose = require('mongoose');
-
+// const mysql=require("mysql")
+// const connection=mysql.createConnection({
+//     host: "localhost",
+//     port:"3306",
+//     user: "root",
+//     password: "root",
+//     database: "upconection"
+// })
 const connectDB = async () => {
     try {
         
-        const cn = await mongoose.connect('mongodb+srv://223222:n5lQBLr9TPdpGl19@upconnectiom.fmeox5s.mongodb.net/?retryWrites=true&w=majority', {
+        const cn = await mongoose.connect(process.env.MONGOURL, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         
@@ -21,7 +28,8 @@ const connectDB = async () => {
 }
 
 module.exports = {
-    connectDB
+    connectDB,
+    // connection
 }
 // const { MongoClient, ServerApiVersion } = require('mongodb');
 // const uri = "mongodb+srv://223222:n5lQBLr9TPdpGl19@upconnectiom.fmeox5s.mongodb.net/upconnectiom?retryWrites=true&w=majority";

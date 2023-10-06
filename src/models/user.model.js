@@ -11,6 +11,7 @@ const UserSchema=new mongoose.Schema({
     gender:{type:String,required:true},
     email:{type:String,required:true},
     code:{type:String,required:true},
-    status:{type:String,required:true,default:"UNIVERIFIED"}
+    status:{type:String,required:true,default:"UNIVERIFIED"},
+   
 })
 module.exports=mongoose.model('User',UserSchema)
